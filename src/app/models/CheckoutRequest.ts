@@ -1,5 +1,5 @@
 export interface CheckoutRequest {
-    packageIds: string [],
+    packageIds: number [],
     cardHolderName: string,
     cardNumber: number,
     expireDate: string

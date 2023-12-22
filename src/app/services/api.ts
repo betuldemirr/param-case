@@ -4,7 +4,7 @@ import { getAuthToken } from '../util/AuthUtils';
 export const fetchWithInterceptor = async (url: string, options: RequestInit = {}): Promise<any> => {
     const token = getAuthToken();
 
-    const headers = {
+    const headers: Record<string, string> = {
         'Content-Type': 'application/json',
     };
 

@@ -41,8 +41,8 @@ export const userSlice = createSlice({
 
 export const { setUser, clearUser,  selectPackage, deselectPackage } = userSlice.actions;
 
-export const selectUser = (state: RootState) => state.user.user;
-export const selectSelectedPackages = (state: RootState) => state.user.selectedPackages;
-export const selectTotalAmount = (state: RootState) => state.user.totalAmount;
+export const selectUser = (state: { user: UserState }) => state.user.user;
+export const selectSelectedPackages = (state: { user: UserState }) => state.user.selectedPackages;
+export const selectTotalAmount = (state: { user: UserState }) => state.user.totalAmount;
 
 export default userSlice.reducer;

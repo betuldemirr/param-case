@@ -56,7 +56,6 @@ const PackageSelection: React.FC = () => {
         router.push('/checkout')
     };
 
-    //const totalAmount = selectedPackages.reduce((total: any, pkg: Package) => total + pkg.price, 0);
 
     return (
         <div>

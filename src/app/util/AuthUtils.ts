@@ -2,7 +2,7 @@ export const getAuthToken = () => {
     return localStorage.getItem('authToken');
 };
 
-export const setAuthToken = (token) => {
+export const setAuthToken = (token : any) => {
     localStorage.setItem('authToken', token);
 };
 
